@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FotoFinder</title>
     <meta name="viewport" content= "width= device-width, initial-scale=1">
 	  <link rel="stylesheet" type="text/css" href="normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>FotoFinder</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <header>
+    <header class="header">
       <h1>foto<span class="header__title--span">finder</span></h1>
 		  <div class="header__search--container">
 			  <form class="header__search">
@@ -18,17 +20,26 @@
       </div>
     </header>
     <section class="input-form">
-		<form class="input-form__container">
-			<label class="input-form__labels" for="title">Title</label>
-			<input class="input-form__title" type="text" name="title">
-			<label class="input-form__labels" for="caption">Caption</label>
-			<input class="input-form__caption" type="text" name="caption"></input>
-			<input class="input-form__btn btn--choose-file" type="submit" value="Choose File" disabled="true">
-      <div class="input-form__btn-container">
-        <input class="input-form__btn btn--view-favorites" type="submit" value="View Favorites" disabled="true">
-        <input class="input-form__btn btn--add-to-album" type="submit" value="Add to Album" disabled="true">
-      </div>
-		</form>
-	</section>
+  		<form class="input-form__container">
+  			<label class="input-form__labels" for="title">Title</label>
+  			<input class="input-form__field" type="text" name="title">
+  			<label class="input-form__labels" for="caption">Caption</label>
+  			<input class="input-form__field" type="text" name="caption"></input>
+
+        <input class="input-file" type="file" id="file" accept='image/png, image/jpg' disabled="true">
+
+        <label class="input-form__btn" id="btn--choose-file" for="file">Choose File</label>
+
+        <div class="input-form__btn-container">
+          <input class="input-form__btn btn--view-favorites" type="submit" value="View Favorites" disabled="true">
+          <input class="input-form__btn btn--add-to-album" type="submit" value="Add to Album" disabled="true">
+        </div>
+  		</form>
+	  </section>
+
+
+
+  <script src="main.js"></script>
+  <script src='photo.js'></script>
   </body>
 </html>
