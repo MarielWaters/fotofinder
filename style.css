@@ -13,10 +13,10 @@ body {
 
 .header {
   color: #FFF;
-  text-transform: uppercase;
   justify-content: space-between;
   letter-spacing: .2rem;
-  margin: 1rem;
+  margin: 1.5rem;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -24,16 +24,15 @@ h1 {
 }
 
 .header__title--span::before {
-  /* border: 2px solid pink; */
   background-image: url("./assets/foto-finder-logo.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
   background-size: 2.5rem;
   content: "";
   height: 2rem;
+  left: 6.1rem;
   position: absolute;
   width: 2.7rem;
-  left: 6.1rem;
-  background-repeat: no-repeat;
-      background-position: bottom;
 }
 
 .header__title--span {
@@ -41,39 +40,49 @@ h1 {
 }
 
 .header__search--container {
-  border: solid 2px yellow;
+  border: 2px solid #B2A1B1;
+  border-radius: 5px;
   display: flex;
   float: right;
+  width: 23%;
 }
 
 .header__search {
+  align-items: center;
+  display: flex;
   position: relative;
+  width: 100%;
+}
+
+.header__search--input {
+  border: none;
+  color: #B2A1B1;
+  height: 2rem;
+  padding-left: 0.5rem;
+  width: 105%;
 }
 
 .header__search--btn {
   background-color: #C2B2B4;
   background-image: url("./assets/magnifier.png");
-  background-size: 2rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.3rem;
+  border: 0;
   height: 2rem;
-  width: 2rem;
-  /* position: absolute; */
+  width: 2.5rem;
 }
 
 .header,
 .input-form__container {
   display: flex;
-
 }
 
 .input-form__container {
-  /* border: 2px pink solid; */
   color: #C2B2B4;
   flex-direction: column;
   width: 50%;
-  /* justify-content: center; */
-  /* justify-content: space-around; */
 }
-
 
 .input-form {
   align-items: center;
@@ -84,7 +93,6 @@ h1 {
 
 .input-form__labels {
   margin-bottom: .5rem;
-
 }
 
 .input-form__field {
@@ -98,29 +106,29 @@ h1 {
 }
 
 .input-file {
-	width: 0.1px;
 	height: 0.1px;
 	opacity: 0;
 	overflow: hidden;
 	position: absolute;
+  width: 0.1px;
 	z-index: -1;
 }
 
 .input-file,
 #btn--choose-file {
-  width: 100%;
   margin-top: 1.5rem;
-  text-align: center;
   padding-top: 0.6rem;
+  text-align: center;
+  width: 100%;
 }
 
 .input-form__btn {
   background-color: #5B4447;
+  border: 0;
   color: #FFF;
   height: 2.5rem;
-  width: 16rem;
-  border: 0;
   margin-top: 2rem;
+  width: 16rem;
 }
 
 .input-form__btn:hover {
