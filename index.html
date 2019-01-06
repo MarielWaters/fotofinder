@@ -8,6 +8,27 @@
     <title>FotoFinder</title>
   </head>
   <body>
-
+    <header>
+      <h1>foto<span class="header__title--span">finder</span></h1>
+		  <div class="header__search--container">
+			  <form class="header__search">
+				  <input class="header__search--input" type="search" name="search" value="Search" onfocus="this.value=''">
+				  <button class="header__search--btn" type="submit"></button>
+			  </form>
+      </div>
+    </header>
+    <section class="input-form">
+		<form class="input-form__container">
+			<label class="input-form__labels" for="title">Title</label>
+			<input class="input-form__title" type="text" name="title">
+			<label class="input-form__labels" for="caption">Caption</label>
+			<input class="input-form__caption" type="text" name="caption"></input>
+			<input class="input-form__btn btn--choose-file" type="submit" value="Choose File" disabled="true">
+      <div class="input-form__btn-container">
+        <input class="input-form__btn btn--view-favorites" type="submit" value="View Favorites" disabled="true">
+        <input class="input-form__btn btn--add-to-album" type="submit" value="Add to Album" disabled="true">
+      </div>
+		</form>
+	</section>
   </body>
 </html>
