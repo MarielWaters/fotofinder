@@ -1,0 +1,128 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #3E2A35;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+  color: #FFF;
+  text-transform: uppercase;
+  justify-content: space-between;
+  letter-spacing: .2rem;
+  margin: 1rem;
+}
+
+h1 {
+  position: relative;
+}
+
+.header__title--span::before {
+  /* border: 2px solid pink; */
+  background-image: url("./assets/foto-finder-logo.svg");
+  background-size: 2.5rem;
+  content: "";
+  height: 2rem;
+  position: absolute;
+  width: 2.7rem;
+  left: 6.1rem;
+  background-repeat: no-repeat;
+      background-position: bottom;
+}
+
+.header__title--span {
+  margin-left: 2.7rem;
+}
+
+.header__search--container {
+  border: solid 2px yellow;
+  display: flex;
+  float: right;
+}
+
+.header__search {
+  position: relative;
+}
+
+.header__search--btn {
+  background-color: #C2B2B4;
+  background-image: url("./assets/magnifier.png");
+  background-size: 2rem;
+  height: 2rem;
+  width: 2rem;
+  /* position: absolute; */
+}
+
+.header,
+.input-form__container {
+  display: flex;
+
+}
+
+.input-form__container {
+  /* border: 2px pink solid; */
+  color: #C2B2B4;
+  flex-direction: column;
+  width: 50%;
+  /* justify-content: center; */
+  /* justify-content: space-around; */
+}
+
+
+.input-form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.input-form__labels {
+  margin-bottom: .5rem;
+
+}
+
+.input-form__field {
+  height: 2.5rem;
+  margin-bottom: .75rem;
+}
+
+.input-form__btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-file {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.input-file,
+#btn--choose-file {
+  width: 100%;
+  margin-top: 1.5rem;
+  text-align: center;
+  padding-top: 0.6rem;
+}
+
+.input-form__btn {
+  background-color: #5B4447;
+  color: #FFF;
+  height: 2.5rem;
+  width: 16rem;
+  border: 0;
+  margin-top: 2rem;
+}
+
+.input-form__btn:hover {
+  background-color: #938284;
+}
