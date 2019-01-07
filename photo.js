@@ -6,8 +6,10 @@ class Photo {
 		this.file = file;
     this.favorite = favorite;
   }
-  saveToStorage() {
-
+  saveToStorage(cardsArr) {
+    console.log(this.file);
+    // var cardData = {id: this.id, title: this.title, caption: this.caption, file: this.file, favorite: this.favorite};
+    localStorage.setItem("cards", JSON.stringify(cardsArr));
   }
   deleteFromStorage() {
 

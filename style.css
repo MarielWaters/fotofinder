@@ -160,7 +160,7 @@ h1 {
 }
 
 .card__image {
-  background-image: url("./assets/sample-image.png");
+  /* background-image: url("./assets/sample-image.png"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
