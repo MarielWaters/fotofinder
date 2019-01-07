@@ -103,6 +103,7 @@ h1 {
 .input-form__btn-container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
 .input-file {
@@ -131,6 +132,59 @@ h1 {
   width: 16rem;
 }
 
-.input-form__btn:hover {
+.input-form__btn:hover,
+.card-section {
   background-color: #938284;
+}
+
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 4rem 2rem;
+}
+
+.card {
+  background-color: #FFF;
+  border: 1px solid #5B4447;
+  display: flex;
+  flex: 0 1 calc(25% - 2em);
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  width: 23%;
+}
+
+.card__header {
+  height: 2rem;
+  padding: .35rem;
+}
+
+.card__image {
+  background-image: url("./assets/sample-image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 9rem;
+  width: 100%;
+}
+
+.card__image--caption {
+  height: 5rem;
+  line-height: 1.4rem;
+  overflow: scroll;
+  padding: .5rem;
+}
+
+.card__footer {
+  align-self: flex-end;
+  background-color: #5B4447;
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
+  max-height: 3.5rem;
+  padding: .6rem;
+}
+
+.card__icons {
+  height: 2rem;
 }
